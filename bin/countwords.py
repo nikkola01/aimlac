@@ -19,6 +19,6 @@ def count_words(reader):
     return word_counts
 
 
-with open('frankenstein.txt', 'r') as reader:
+with open('data/frankenstein.txt', 'r') as reader:
     word_counts = count_words(reader)
 util.collection_to_csv(word_counts, num=100)
